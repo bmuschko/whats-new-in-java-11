@@ -13,7 +13,6 @@ repositories {
 
 dependencies {
     implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
-    implementation 'org.glassfish.corba:glassfish-corba:4.2.0-b004'
     implementation 'org.glassfish.corba:glassfish-corba-orb:4.2.0-b004'
     implementation 'javax.transaction:javax.transaction-api:1.3'
     implementation 'javax.annotation:javax.annotation-api:1.3.2'

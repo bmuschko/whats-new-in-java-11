@@ -5,7 +5,7 @@
     <artifactId>java11</artifactId>
     <version>1.0</version>
     <name>What's new in Java 11</name>
-    <description>A test-driven approach to the demonstrating what has changed in Java 11.</description>
+    <description>A test-driven approach to demonstrating new features and APIs in Java 11.</description>
 
     <properties>
         <jdk.version>11</jdk.version>
@@ -28,11 +28,6 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish.corba</groupId>
-            <artifactId>glassfish-corba</artifactId>
-            <version>${glassfish.corba.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.corba</groupId>
             <artifactId>glassfish-corba-orb</artifactId>
             <version>${glassfish.corba.version}</version>
         </dependency>
@@ -50,6 +45,7 @@
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-ri</artifactId>
             <version>${jaxws.version}</version>
+            <type>zip</type>
             <exclusions>
                 <exclusion>
                     <groupId>com.sun.xml.ws</groupId>
@@ -82,22 +78,24 @@
         </dependency>
     </dependencies>
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
