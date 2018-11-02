@@ -6,6 +6,7 @@ public class Outer {
     private static String level = "outer";
 
     public static class Inner {
+        // already valid in Java 10
         public static String getOuterViaRegularFieldAccess() {
             return Outer.level;
         }
@@ -20,9 +21,4 @@ public class Outer {
             }
         }
     }
-//
-//    public static void main(String[] args) {
-//        Inner.getOuterViaRegularFieldAccess(); // already valid in Java 10
-//        Inner.getOuterViaReflection();
-//    }
 }

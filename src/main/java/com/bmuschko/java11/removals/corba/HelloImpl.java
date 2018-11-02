@@ -9,12 +9,10 @@ class HelloImpl {
         orb = orb_val;
     }
 
-    // implement sayHello() method
     public String sayHello() {
         return "\nHello world !!\n";
     }
 
-    // implement shutdown() method
     public void shutdown() {
         orb.shutdown(false);
     }
