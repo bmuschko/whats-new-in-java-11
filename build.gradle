@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+version = '1.0'
+group = 'com.bmuschko'
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
+    implementation 'org.glassfish.corba:glassfish-corba:4.2.0-b004'
+    implementation 'org.glassfish.corba:glassfish-corba-orb:4.2.0-b004'
+    implementation 'javax.transaction:javax.transaction-api:1.3'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    implementation('com.sun.xml.ws:jaxws-ri:2.3.1') {
+        exclude module: 'txw2'
+        exclude module: 'sdo-eclipselink-plugin'
+    }
+    def junitJupiterVersion = '5.3.1'
+    testImplementation 'com.google.code.findbugs:jsr305:3.0.2'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}

@@ -1,0 +1,7 @@
+build
+target
+out
+.gradle
+.idea
+.DS_Store
+*.jfr
