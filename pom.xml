@@ -14,7 +14,6 @@
         <jta.version>1.3</jta.version>
         <annotation.version>1.3.2</annotation.version>
         <jaxws.version>2.3.1</jaxws.version>
-        <jsr305.version>3.0.2</jsr305.version>
         <junit.jupiter.version>5.3.1</junit.jupiter.version>
         <junit.platform.version>1.3.1</junit.platform.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,12 +58,6 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>${jsr305.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
