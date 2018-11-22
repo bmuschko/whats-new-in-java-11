@@ -21,7 +21,6 @@ dependencies {
         exclude module: 'sdo-eclipselink-plugin'
     }
     def junitJupiterVersion = '5.3.1'
-    testImplementation 'com.google.code.findbugs:jsr305:3.0.2'
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
