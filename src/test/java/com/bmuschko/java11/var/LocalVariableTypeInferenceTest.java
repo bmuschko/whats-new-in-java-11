@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LocalVariableTypeInferenceTest {
     @Test
-    void canUseVarForLamdaParameters() {
+    void canUseVarForLambdaParameters() {
         List<String> months = List.of("January", "February", "March");
         List<String> filteredMonths = months
                 .stream()
