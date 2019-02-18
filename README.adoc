@@ -1,5 +1,7 @@
 = What's new in Java 11 image:https://travis-ci.org/bmuschko/whats-new-in-java-11.svg?branch=master["Build Status", link="https://travis-ci.org/bmuschko/whats-new-in-java-11"]
 
+image::https://learning.oreilly.com/library/view/whats-new-in/9781492047575/assets/cover.png[alt=Book Cover,width=100]
+
 Demonstrates some of the new features and library changes in Java 11 in a test-driven approach with JUnit 5. All test cases live in `src/test/java`. The main source code under `src/main/java` contains examples that demonstrate the use of open source libraries as a replacement for the removed Java EE modules.
 
 == Building the code
