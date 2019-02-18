@@ -1,11 +1,15 @@
 = What's new in Java 11 image:https://travis-ci.org/bmuschko/whats-new-in-java-11.svg?branch=master["Build Status", link="https://travis-ci.org/bmuschko/whats-new-in-java-11"]
 
 ++++
-<img align="left" role="left" src="https://learning.oreilly.com/library/view/whats-new-in/9781492047575/assets/cover.png" width="120" alt="Book Cover" />
+<img align="left" role="left" src="https://learning.oreilly.com/library/view/whats-new-in/9781492047575/assets/cover.png" width="110" alt="Book Cover" />
 ++++
 Source code for book https://learning.oreilly.com/library/view/whats-new-in/9781492047575/["What's New in Java 11?"], A Quick Start Reference to the Long Term Support Release, published by Benjamin Muschko for O'Reilly Media Inc.
 
 Demonstrates some of the new features and library changes in Java 11 in a test-driven approach with JUnit 5. All test cases live in `src/test/java`. The main source code under `src/main/java` contains examples that demonstrate the use of open source libraries as a replacement for the removed Java EE modules.
+
+++++
+<br>
+++++
 
 == Building the code
 
