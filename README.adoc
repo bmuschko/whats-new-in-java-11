@@ -1,6 +1,7 @@
 = What's new in Java 11 image:https://travis-ci.org/bmuschko/whats-new-in-java-11.svg?branch=master["Build Status", link="https://travis-ci.org/bmuschko/whats-new-in-java-11"]
 
 ++++
+<br>
 <img align="left" role="left" src="https://learning.oreilly.com/library/view/whats-new-in/9781492047575/assets/cover.png" width="110" alt="Book Cover" />
 ++++
 Source code for book https://learning.oreilly.com/library/view/whats-new-in/9781492047575/["What's New in Java 11?"], A Quick Start Reference to the Long Term Support Release, published by Benjamin Muschko for O'Reilly Media Inc.
